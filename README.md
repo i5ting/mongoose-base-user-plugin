@@ -45,3 +45,15 @@ var UserModel = mongoose.model('MyUser', MyUserSchema);
 module.exports = UserModel;
 ```
 
+## Api
+
+```
+User.login('i5ting 2', '0123456', function (err, result) {
+  
+})
+```
+
+- if result.code < 0 is error
+  - -1 = 'username is not exist!'
+  - -2 = 'password is incorrect, please check it again!'
+  
