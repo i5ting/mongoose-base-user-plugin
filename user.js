@@ -1,18 +1,3 @@
-# mongoose-base-user-plugin
-
-a base user plugin for mongoose
-
-
-## Install
-
-```
-npm i -S mongoose-base-user-plugin
-```
-## Usages
-
-create a model like user.js
-
-```
 var mongoose = require('mongoose');
 var base_user = require('.')
 
@@ -43,5 +28,3 @@ var UserModel = mongoose.model('MyUser', MyUserSchema);
 
 // 暴露接口
 module.exports = UserModel;
-```
-

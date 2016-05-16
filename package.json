@@ -1,0 +1,26 @@
+{
+  "name": "mongoose-base-user-plugin",
+  "version": "1.0.0",
+  "description": "a base user plugin for mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/ava -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i5ting/UserModel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i5ting/UserModel/issues"
+  },
+  "homepage": "https://github.com/i5ting/UserModel#readme",
+  "devDependencies": {
+    "ava": "^0.14.0"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.6",
+    "mongoose": "^4.4.17"
+  }
+}
