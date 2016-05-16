@@ -3,8 +3,9 @@
 a base user plugin for mongoose
 
 
-[![Build Status](https://travis-ci.org/i5ting/mongoose-base-user-plugin.svg?branch=master)](https://travis-ci.org/i5ting/mongoose-base-user-plugin)  
-
+[![gitter][gitter-image]][gitter-url]
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
 
 ## Install
 
@@ -60,3 +61,14 @@ User.login('i5ting 2', '0123456', function (err, result) {
   - -1 = 'username is not exist!'
   - -2 = 'password is incorrect, please check it again!'
   
+
+
+
+[npm-image]: https://img.shields.io/npm/v/mongoose-base-user-plugin.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/mongoose-base-user-plugin
+[travis-image]: https://img.shields.io/travis/i5ting/mongoose-base-user-plugin/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/i5ting/mongoose-base-user-plugin
+[coveralls-image]: https://img.shields.io/codecov/c/github/i5ting/mongoose-base-user-plugin.svg?style=flat-square
+[coveralls-url]: https://codecov.io/github/i5ting/mongoose-base-user-plugin?branch=master
+[gitter-image]: https://img.shields.io/gitter/room/i5ting/mongoose-base-user-plugin.svg?style=flat-square
+[gitter-url]: https://gitter.im/i5ting/mongoose-base-user-plugin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
