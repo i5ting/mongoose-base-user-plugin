@@ -3,6 +3,9 @@
 a base user plugin for mongoose
 
 
+[![Build Status](https://travis-ci.org/i5ting/mongoose-base-user-plugin.svg?branch=master)](https://travis-ci.org/i5ting/mongoose-base-user-plugin)  
+
+
 ## Install
 
 ```
