@@ -24,7 +24,7 @@ var MyUserSchema = new mongoose.Schema({
 MyUserSchema.plugin(base_user);
 
 // 定义Model
-var UserModel = mongoose.model('MyUser', MyUserSchema);
+var MyUserModel = mongoose.model('MyUser', MyUserSchema);
 
 // 暴露接口
-module.exports = UserModel;
+module.exports = MyUserModel;
