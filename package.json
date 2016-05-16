@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i5ting/UserModel.git"
+    "url": "git+https://github.com/i5ting/mongoose-base-user-plugin.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/i5ting/UserModel/issues"
+    "url": "https://github.com/i5ting/mongoose-base-user-plugin/issues"
   },
-  "homepage": "https://github.com/i5ting/UserModel#readme",
+  "homepage": "https://github.com/i5ting/mongoose-base-user-plugin#readme",
   "devDependencies": {
     "ava": "^0.14.0"
   },
