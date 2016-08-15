@@ -4,7 +4,8 @@
   "description": "a base user plugin for mongoose",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/ava -v"
+    "test": "./node_modules/.bin/ava -v",
+     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/i5ting/mongoose-base-user-plugin#readme",
   "devDependencies": {
-    "ava": "^0.14.0"
+    "ava": "^0.14.0",
+    "coveralls": "^2.11.9",
+    "nyc": "^6.4.4"
   },
   "dependencies": {
     "bcrypt": "^0.8.6",
