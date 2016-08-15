@@ -82,6 +82,52 @@ Note: OS X users using Xcode 4.3.1 or above may need to run the following comman
 
 if you deploy on ubuntu, make sure that g++ is available.
 
+## Q & A
+
+提示，当发现bcrypt无法安装的时候
+
+```
+> bcrypt@0.8.7 install ~/workspace/github/mongoose-base-user-plugin/node_modules/bcrypt
+> node-gyp rebuild
+
+gyp: ~/.node-gyp/4.4.5/common.gypi not found (cwd: ~/workspace/github/mongoose-base-user-plugin/node_modules/bcrypt) while reading includes of binding.gyp while trying to load binding.gyp
+gyp ERR! configure error 
+gyp ERR! stack Error: `gyp` failed with exit code: 1
+gyp ERR! stack     at ChildProcess.onCpExit (~/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:343:16)
+gyp ERR! stack     at emitTwo (events.js:87:13)
+gyp ERR! stack     at ChildProcess.emit (events.js:172:7)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:200:12)
+gyp ERR! System Darwin 14.5.0
+gyp ERR! command "~/.nvm/versions/node/v4.4.5/bin/node" "~/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd ~/workspace/github/mongoose-base-user-plugin/node_modules/bcrypt
+gyp ERR! node -v v4.4.5
+gyp ERR! node-gyp -v v1.0.3
+gyp ERR! not ok 
+npm ERR! Darwin 14.5.0
+npm ERR! argv "~/.nvm/versions/node/v4.4.5/bin/node" "~/.nvm/versions/node/v4.4.5/bin/npm" "i"
+npm ERR! node v4.4.5
+npm ERR! npm  v2.10.1
+npm ERR! code ELIFECYCLE
+
+npm ERR! bcrypt@0.8.7 install: `node-gyp rebuild`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the bcrypt@0.8.7 install script 'node-gyp rebuild'.
+npm ERR! This is most likely a problem with the bcrypt package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node-gyp rebuild
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls bcrypt
+npm ERR! There is likely additional logging output above.
+```
+
+解决方案
+
+```
+rm -rf ~/.node_gyp
+```
+
 ## Contributing
 
 1. Fork it
